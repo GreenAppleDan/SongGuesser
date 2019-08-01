@@ -11,7 +11,7 @@
 import UIKit
 
 class MainViewController: UIViewController, MainViewProtocol {
-    
+    var arrayOfSongs: [Song]?
     
     @IBOutlet weak var keyWordsTextField: UITextField!
     
@@ -31,6 +31,20 @@ class MainViewController: UIViewController, MainViewProtocol {
         presenter.configureView()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is FoundSongsViewController {
+            let viewController = segue.destination as? FoundSongsViewController
+            viewController?.arrayOfSongs = arrayOfSongs
+        }
+    }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.destination is AnalyticsResultViewController
+//        {
+//            let viewController = segue.destination as? AnalyticsResultViewController
+//            viewController?.arrayOfModels = arrayOfCellModelsForAnalyticsResult
+//        }
+//    }
 }
 
 

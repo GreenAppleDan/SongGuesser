@@ -12,11 +12,17 @@ import Foundation
 import UIKit
 
 class MainRouter: MainRouterProtocol {
+
+    
     
     weak var viewController: MainViewController!
     
     init(viewController: MainViewController) {
         self.viewController = viewController
+    }
+    
+    func moveToSongList() {
+        viewController.performSegue(withIdentifier: "fromSearchToSonglist", sender: nil)
     }
 }
 

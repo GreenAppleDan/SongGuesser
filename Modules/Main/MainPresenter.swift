@@ -33,5 +33,10 @@ class MainPresenter: MainPresenterProtocol {
             AlertPresenterService.shared.presentAlert(title: "Error", message: "Text Field is empty", viewController: view)
         }
     }
+    
+    func arrayOfSongsRecieved(arrayOfSongs: [Song]) {
+        view.arrayOfSongs = arrayOfSongs
+        router.moveToSongList()
+    }
 }
 

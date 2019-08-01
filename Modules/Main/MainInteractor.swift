@@ -22,7 +22,7 @@ class MainInteractor: MainInteractorProtocol {
         var preparedStringForUrl = keyWords.replacingOccurrences(of: " ", with: "%20").replacingOccurrences(of: "'", with: "%27")
         
         firstly{AudDService.shared.getArrayOfSongsFromRequest(keyWords: preparedStringForUrl)}.done { arrayOfSongs in
-            print(arrayOfSongs)
+            self.presenter.arrayOfSongsRecieved(arrayOfSongs: arrayOfSongs)
         }
     }
 }

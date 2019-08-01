@@ -20,5 +20,7 @@ class FoundSongsConfigurator: FoundSongsConfiguratorProtocol {
         viewController.presenter = presenter
         presenter.interactor = interactor
         presenter.router = router
+        
+        viewController.lyricsView.delegate = presenter
     }
 }

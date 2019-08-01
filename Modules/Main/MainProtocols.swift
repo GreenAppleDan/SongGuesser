@@ -11,12 +11,14 @@ import Foundation
 import UIKit
 protocol MainViewProtocol where Self: UIViewController {
     var keyWordsTextField: UITextField! {get set}
+    var arrayOfSongs: [Song]? {get set}
 }
 
 protocol MainPresenterProtocol: class {
     var router: MainRouterProtocol! { set get }
     func configureView()
     func findTheSongButtonClicked()
+    func arrayOfSongsRecieved(arrayOfSongs: [Song])
 }
 
 protocol MainInteractorProtocol: class {
@@ -24,6 +26,7 @@ protocol MainInteractorProtocol: class {
 }
 
 protocol MainRouterProtocol: class {
+    func moveToSongList()
 }
 
 protocol MainConfiguratorProtocol: class {

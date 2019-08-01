@@ -3,7 +3,26 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "closure #2 in MainInteractor.findTheSong(keyWords:):MainInteractor.swift">
+         contextName = "FoundSongsViewController.tableView(_:heightForRowAt:):FoundSongsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "sections[indexPath.section].rows[indexPath.row].cellHeight">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in FoundSongsViewController.showLyricsView():FoundSongsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view.frame.origin.y">
+            </PersistentString>
+            <PersistentString
+               value = "self.view.frame.height">
+            </PersistentString>
+            <PersistentString
+               value = "lyricsView.frame.origin.y">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "closure #1 in AudDService.getArrayOfSongsFromRequest(keyWords:):AudDService.swift">
@@ -23,6 +42,9 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "closure #2 in MainInteractor.findTheSong(keyWords:):MainInteractor.swift">
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in closure #1 in AudDService.getArrayOfSongsFromRequest(keyWords:):AudDService.swift">
          <PersistentStrings>
             <PersistentString
@@ -33,6 +55,33 @@
             </PersistentString>
             <PersistentString
                value = "jsonString.data(using: .utf8)!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FoundSongsViewController.tableView(_:cellForRowAt:):FoundSongsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "sections">
+            </PersistentString>
+            <PersistentString
+               value = "model.cellIdentifier">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SongInfoCellModel.init(song:):SongInfoCellModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "song.fullTitle">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SongSectionModel.init(_:):SongSectionModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "rows">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
