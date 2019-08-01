@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		025AB4454B7E9845768DD5B7 /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F7F7AF05290A202C846455 /* AuthPresenter.swift */; };
+		0BAD8203664303E8BFD8827A /* FoundSongsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5842B3ED73DE1808E6A687 /* FoundSongsPresenter.swift */; };
+		0F1F0ABAE45884BF0EFD2C10 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7911A5BD82E91FC35371E4E6 /* MainPresenter.swift */; };
+		14044C6922F1F5280078283B /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14044C6822F1F5280078283B /* Song.swift */; };
+		14044C6B22F1F72C0078283B /* AudDService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14044C6A22F1F72C0078283B /* AudDService.swift */; };
+		14044C6E22F23B610078283B /* URLType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14044C6D22F23B610078283B /* URLType.swift */; };
 		142FB6E922EDE9840017693B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142FB6E822EDE9840017693B /* AppDelegate.swift */; };
 		142FB6EE22EDE9840017693B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142FB6EC22EDE9840017693B /* Main.storyboard */; };
 		142FB6F022EDE9850017693B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 142FB6EF22EDE9850017693B /* Assets.xcassets */; };
@@ -20,10 +25,20 @@
 		1462AB7022EE090200335E79 /* AlertPresenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1462AB6F22EE090200335E79 /* AlertPresenterService.swift */; };
 		1462AB7222EE0EAE00335E79 /* EmailValidatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1462AB7122EE0EAE00335E79 /* EmailValidatorService.swift */; };
 		1462AB7422EE3FC800335E79 /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1462AB7322EE3FC800335E79 /* FirebaseAuthService.swift */; };
+		18E26275EA136838FA344B49 /* FoundSongsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C96B0A2AD166AC42889CE37 /* FoundSongsRouter.swift */; };
 		1B4097E31CD4995F0A669CB1 /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ADAF7AD7E1EBEAC97790B /* AuthRouter.swift */; };
+		3D26FE485FED801D662BFCFB /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5440DB187A43AD8F5AF0AC72 /* MainInteractor.swift */; };
+		5C64D33E3DFCF33917631E67 /* FoundSongsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F01C43F070E4051FBBA1F /* FoundSongsConfigurator.swift */; };
 		7020981B76B60C55E5E3E7C2 /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66FD266D31BC63CAD381D8 /* AuthInteractor.swift */; };
 		7BB661C079FB06BEF0F430EE /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E041804643EC76E06B1D6E28 /* AuthViewController.swift */; };
+		7E6CCDDDF05D208B0F907D29 /* FoundSongsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C26C1130F4A614566818244 /* FoundSongsInteractor.swift */; };
+		A7FB672160B02EA78D161476 /* FoundSongsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BD44ADCF313D76B3EC4B22 /* FoundSongsProtocols.swift */; };
 		AE8842415F5DED3D3D3DB586 /* AuthProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039645C279793EAD29217F3 /* AuthProtocols.swift */; };
+		BCE2963E4B246DA73F32B875 /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31C73429CC89AF633C04E03 /* MainConfigurator.swift */; };
+		BF1781B37994385DD85E5E42 /* MainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2D51F5B72FA53D24285A14 /* MainProtocols.swift */; };
+		CD7AAA90725FC82C62C4A6ED /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E7181ECD2EC4EE229A6582 /* MainViewController.swift */; };
+		EF33C32F8D70C59169685C72 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A1D5AFED19452FB519821 /* MainRouter.swift */; };
+		F50B32BF0A70AC79ADC546DD /* FoundSongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6733A971BE77AFF1A42B8D /* FoundSongsViewController.swift */; };
 		FCD4330A01859A0BC2B96F8F /* AuthConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55AD0B3310E200B8F688F4D /* AuthConfigurator.swift */; };
 		FF7A7C1F42379EFEDEEAB86A /* Pods_SongGuesser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF0795B5ED772858519A255 /* Pods_SongGuesser.framework */; };
 /* End PBXBuildFile section */
@@ -46,6 +61,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14044C6822F1F5280078283B /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		14044C6A22F1F72C0078283B /* AudDService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudDService.swift; sourceTree = "<group>"; };
+		14044C6D22F23B610078283B /* URLType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLType.swift; sourceTree = "<group>"; };
 		142FB6E522EDE9840017693B /* SongGuesser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SongGuesser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		142FB6E822EDE9840017693B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		142FB6ED22EDE9840017693B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,15 +82,27 @@
 		1462AB6F22EE090200335E79 /* AlertPresenterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenterService.swift; sourceTree = "<group>"; };
 		1462AB7122EE0EAE00335E79 /* EmailValidatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidatorService.swift; sourceTree = "<group>"; };
 		1462AB7322EE3FC800335E79 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
+		1C96B0A2AD166AC42889CE37 /* FoundSongsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FoundSongsRouter.swift; sourceTree = "<group>"; };
 		32949B656B04B008E1B484BF /* Pods-SongGuesser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SongGuesser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SongGuesser/Pods-SongGuesser.debug.xcconfig"; sourceTree = "<group>"; };
 		34F7F7AF05290A202C846455 /* AuthPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
+		3C26C1130F4A614566818244 /* FoundSongsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FoundSongsInteractor.swift; sourceTree = "<group>"; };
 		3E66FD266D31BC63CAD381D8 /* AuthInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
+		4B6733A971BE77AFF1A42B8D /* FoundSongsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FoundSongsViewController.swift; sourceTree = "<group>"; };
+		5440DB187A43AD8F5AF0AC72 /* MainInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		5A1ADAF7AD7E1EBEAC97790B /* AuthRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
 		5A2E07EEC72087D2351C75E7 /* Pods-SongGuesser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SongGuesser.release.xcconfig"; path = "Pods/Target Support Files/Pods-SongGuesser/Pods-SongGuesser.release.xcconfig"; sourceTree = "<group>"; };
+		7911A5BD82E91FC35371E4E6 /* MainPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		7CF0795B5ED772858519A255 /* Pods_SongGuesser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SongGuesser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A66F01C43F070E4051FBBA1F /* FoundSongsConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FoundSongsConfigurator.swift; sourceTree = "<group>"; };
+		A9E7181ECD2EC4EE229A6582 /* MainViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AE2D51F5B72FA53D24285A14 /* MainProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainProtocols.swift; sourceTree = "<group>"; };
+		B8BD44ADCF313D76B3EC4B22 /* FoundSongsProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FoundSongsProtocols.swift; sourceTree = "<group>"; };
+		BC5842B3ED73DE1808E6A687 /* FoundSongsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FoundSongsPresenter.swift; sourceTree = "<group>"; };
 		D039645C279793EAD29217F3 /* AuthProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthProtocols.swift; sourceTree = "<group>"; };
+		D37A1D5AFED19452FB519821 /* MainRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		E041804643EC76E06B1D6E28 /* AuthViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		E55AD0B3310E200B8F688F4D /* AuthConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthConfigurator.swift; sourceTree = "<group>"; };
+		F31C73429CC89AF633C04E03 /* MainConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +131,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14044C6722F1F5160078283B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				14044C6822F1F5280078283B /* Song.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		14044C6C22F23B270078283B /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				14044C6D22F23B610078283B /* URLType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		142FB6DC22EDE9840017693B = {
 			isa = PBXGroup;
 			children = (
+				14044C6C22F23B270078283B /* Enums */,
+				14044C6722F1F5160078283B /* Entities */,
 				1462AB6E22EE08E900335E79 /* Services */,
 				1462AB6922EE062300335E79 /* LogInView */,
 				142FB6E722EDE9840017693B /* SongGuesser */,
@@ -172,6 +220,7 @@
 				1462AB6F22EE090200335E79 /* AlertPresenterService.swift */,
 				1462AB7122EE0EAE00335E79 /* EmailValidatorService.swift */,
 				1462AB7322EE3FC800335E79 /* FirebaseAuthService.swift */,
+				14044C6A22F1F72C0078283B /* AudDService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -180,8 +229,24 @@
 			isa = PBXGroup;
 			children = (
 				7B88A664AF5DBF9F43B3E434 /* Auth */,
+				B2253AAF79C15C7DA929E51E /* Main */,
+				4FAEA59AE7218FFC5C782E66 /* FoundSongs */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		4FAEA59AE7218FFC5C782E66 /* FoundSongs */ = {
+			isa = PBXGroup;
+			children = (
+				4B6733A971BE77AFF1A42B8D /* FoundSongsViewController.swift */,
+				BC5842B3ED73DE1808E6A687 /* FoundSongsPresenter.swift */,
+				3C26C1130F4A614566818244 /* FoundSongsInteractor.swift */,
+				A66F01C43F070E4051FBBA1F /* FoundSongsConfigurator.swift */,
+				1C96B0A2AD166AC42889CE37 /* FoundSongsRouter.swift */,
+				B8BD44ADCF313D76B3EC4B22 /* FoundSongsProtocols.swift */,
+			);
+			name = FoundSongs;
+			path = FoundSongs;
 			sourceTree = "<group>";
 		};
 		710804F352185FA348A1BEBC /* Pods */ = {
@@ -204,6 +269,19 @@
 				D039645C279793EAD29217F3 /* AuthProtocols.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		B2253AAF79C15C7DA929E51E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A9E7181ECD2EC4EE229A6582 /* MainViewController.swift */,
+				7911A5BD82E91FC35371E4E6 /* MainPresenter.swift */,
+				5440DB187A43AD8F5AF0AC72 /* MainInteractor.swift */,
+				F31C73429CC89AF633C04E03 /* MainConfigurator.swift */,
+				D37A1D5AFED19452FB519821 /* MainRouter.swift */,
+				AE2D51F5B72FA53D24285A14 /* MainProtocols.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		D0FAD9937B3E55A766DEA884 /* Frameworks */ = {
@@ -352,17 +430,21 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SongGuesser/Pods-SongGuesser-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -396,9 +478,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14044C6B22F1F72C0078283B /* AudDService.swift in Sources */,
+				14044C6922F1F5280078283B /* Song.swift in Sources */,
 				142FB6E922EDE9840017693B /* AppDelegate.swift in Sources */,
 				7BB661C079FB06BEF0F430EE /* AuthViewController.swift in Sources */,
 				025AB4454B7E9845768DD5B7 /* AuthPresenter.swift in Sources */,
+				14044C6E22F23B610078283B /* URLType.swift in Sources */,
 				1462AB7022EE090200335E79 /* AlertPresenterService.swift in Sources */,
 				1462AB7422EE3FC800335E79 /* FirebaseAuthService.swift in Sources */,
 				7020981B76B60C55E5E3E7C2 /* AuthInteractor.swift in Sources */,
@@ -407,6 +492,18 @@
 				1462AB7222EE0EAE00335E79 /* EmailValidatorService.swift in Sources */,
 				1B4097E31CD4995F0A669CB1 /* AuthRouter.swift in Sources */,
 				AE8842415F5DED3D3D3DB586 /* AuthProtocols.swift in Sources */,
+				CD7AAA90725FC82C62C4A6ED /* MainViewController.swift in Sources */,
+				0F1F0ABAE45884BF0EFD2C10 /* MainPresenter.swift in Sources */,
+				3D26FE485FED801D662BFCFB /* MainInteractor.swift in Sources */,
+				BCE2963E4B246DA73F32B875 /* MainConfigurator.swift in Sources */,
+				EF33C32F8D70C59169685C72 /* MainRouter.swift in Sources */,
+				BF1781B37994385DD85E5E42 /* MainProtocols.swift in Sources */,
+				F50B32BF0A70AC79ADC546DD /* FoundSongsViewController.swift in Sources */,
+				0BAD8203664303E8BFD8827A /* FoundSongsPresenter.swift in Sources */,
+				7E6CCDDDF05D208B0F907D29 /* FoundSongsInteractor.swift in Sources */,
+				5C64D33E3DFCF33917631E67 /* FoundSongsConfigurator.swift in Sources */,
+				18E26275EA136838FA344B49 /* FoundSongsRouter.swift in Sources */,
+				A7FB672160B02EA78D161476 /* FoundSongsProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

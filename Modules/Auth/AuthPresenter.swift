@@ -37,7 +37,7 @@ class AuthPresenter: AuthPresenterProtocol , LogInViewDelegate {
             firstly {FirebaseAuthService.shared.registerNewUser(email: email, password: password)}.done { (boolResult) in
                 if boolResult {
                     print("registration Success!")
-                    //PERFORM SEGUE
+                    self.router.moveToTabBar()
                 } else {
                     self.presentAlert(title: "Registration error", message: "Ensure your values are correct and try again")
                 }
@@ -54,7 +54,7 @@ class AuthPresenter: AuthPresenterProtocol , LogInViewDelegate {
         firstly {FirebaseAuthService.shared.logInUser(email: email, password: password)}.done { (boolResult) in
             if boolResult {
                 print("login Success!")
-                //PERFORM SEGUE
+                self.router.moveToTabBar()
             } else {
                 self.presentAlert(title: "Login Error", message: "Ensure your values are correct and try again")
             }

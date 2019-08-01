@@ -26,6 +26,7 @@ protocol AuthInteractorProtocol: class {
 }
 
 protocol AuthRouterProtocol: class {
+    func moveToTabBar()
 }
 
 protocol AuthConfiguratorProtocol: class {

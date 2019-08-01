@@ -18,5 +18,9 @@ class AuthRouter: AuthRouterProtocol {
     init(viewController: AuthViewController) {
         self.viewController = viewController
     }
+    
+    func moveToTabBar() {
+        viewController.performSegue(withIdentifier: "LogInToTabBar", sender: nil)
+    }
 }
 

@@ -103,11 +103,143 @@
                         <outlet property="logInView" destination="nag-Ej-Reb" id="rIx-Y5-xwj"/>
                         <outlet property="offsetLogInView" destination="QJb-bt-WnH" id="faL-aA-8ZG"/>
                         <outlet property="passwordTextField" destination="QSa-bb-sCz" id="zKQ-1o-tfO"/>
+                        <segue destination="BMZ-tV-IYP" kind="show" identifier="LogInToTabBar" id="CDb-DY-USR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="138.58695652173915"/>
+        </scene>
+        <!--My Songs-->
+        <scene sceneID="WjC-Yy-O7L">
+            <objects>
+                <viewController id="qpd-4O-YLh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="duK-AE-KRi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="3J0-DW-W6V"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Songs" id="H1y-HN-di2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6S5-yQ-IG9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1928" y="470"/>
+        </scene>
+        <!--Recently Found Songs-->
+        <scene sceneID="ioO-Nu-Hcj">
+            <objects>
+                <viewController id="jYp-Ra-Ldo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="om2-so-vCz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ol8-KZ-hG2"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Recently Found Songs" id="JQ8-zI-acL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ott-sZ-tgf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="995" y="-624"/>
+        </scene>
+        <!--Find Song-->
+        <scene sceneID="6rB-OA-F7u">
+            <objects>
+                <viewController id="s99-EJ-aZx" customClass="MainViewController" customModule="SongGuesser" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x1N-Yj-syH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gsk-kr-cqY">
+                                <rect key="frame" x="20" y="136" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search For Songs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ob-NC-ZIx">
+                                <rect key="frame" x="98" y="48" width="218" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note: wirte words in lyrics separated by space in order to find the song" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9A-0T-QTd">
+                                <rect key="frame" x="51" y="263" width="313" height="40.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPg-IQ-6fG">
+                                <rect key="frame" x="158" y="202" width="99" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="Find The Song">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="findTheSongButtonClicked:" destination="s99-EJ-aZx" eventType="touchUpInside" id="oI1-6O-FAP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3OL-k4-mt0" firstAttribute="trailing" secondItem="7ob-NC-ZIx" secondAttribute="trailing" constant="98" id="1DQ-my-g5k"/>
+                            <constraint firstItem="yPg-IQ-6fG" firstAttribute="top" secondItem="gsk-kr-cqY" secondAttribute="bottom" constant="36" id="70F-9N-1jz"/>
+                            <constraint firstItem="gsk-kr-cqY" firstAttribute="leading" secondItem="3OL-k4-mt0" secondAttribute="leading" constant="20" id="CVO-ve-M64"/>
+                            <constraint firstItem="3OL-k4-mt0" firstAttribute="trailing" secondItem="yPg-IQ-6fG" secondAttribute="trailing" constant="157" id="JBR-sB-jau"/>
+                            <constraint firstItem="l9A-0T-QTd" firstAttribute="leading" secondItem="3OL-k4-mt0" secondAttribute="leading" constant="51" id="RLz-Un-zf0"/>
+                            <constraint firstItem="3OL-k4-mt0" firstAttribute="trailing" secondItem="l9A-0T-QTd" secondAttribute="trailing" constant="50" id="flf-XR-DyU"/>
+                            <constraint firstItem="l9A-0T-QTd" firstAttribute="top" secondItem="yPg-IQ-6fG" secondAttribute="bottom" constant="31" id="ksw-7O-wYS"/>
+                            <constraint firstItem="gsk-kr-cqY" firstAttribute="top" secondItem="7ob-NC-ZIx" secondAttribute="bottom" constant="58" id="pD3-dU-RES"/>
+                            <constraint firstItem="3OL-k4-mt0" firstAttribute="trailing" secondItem="gsk-kr-cqY" secondAttribute="trailing" constant="20" id="qFH-IR-MZJ"/>
+                            <constraint firstItem="7ob-NC-ZIx" firstAttribute="leading" secondItem="3OL-k4-mt0" secondAttribute="leading" constant="98" id="uFi-YE-s3h"/>
+                            <constraint firstItem="yPg-IQ-6fG" firstAttribute="leading" secondItem="3OL-k4-mt0" secondAttribute="leading" constant="158" id="zGb-m8-URP"/>
+                            <constraint firstItem="7ob-NC-ZIx" firstAttribute="top" secondItem="3OL-k4-mt0" secondAttribute="top" constant="28" id="zVo-M3-4Ps"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3OL-k4-mt0"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Find Song" id="UlN-Nm-Yfe"/>
+                    <connections>
+                        <outlet property="keyWordsTextField" destination="gsk-kr-cqY" id="8A1-U8-qi6"/>
+                        <segue destination="PEh-7e-Vrw" kind="show" identifier="fromSearchToSonglist" id="uYs-Vr-lrn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BjE-RZ-xhn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1927.5362318840582" y="-188.31521739130437"/>
+        </scene>
+        <!--Found Songs View Controller-->
+        <scene sceneID="5pk-tT-IXh">
+            <objects>
+                <viewController id="PEh-7e-Vrw" customClass="FoundSongsViewController" customModule="SongGuesser" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SVV-Qf-WDQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="x19-Dc-hQb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gb8-EX-Bd7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2854" y="-634"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="sxb-Mn-mGA">
+            <objects>
+                <tabBarController id="BMZ-tV-IYP" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SYX-7z-pq0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="s99-EJ-aZx" kind="relationship" relationship="viewControllers" id="9lH-Dc-z7Q"/>
+                        <segue destination="qpd-4O-YLh" kind="relationship" relationship="viewControllers" id="Olg-OE-9f7"/>
+                        <segue destination="jYp-Ra-Ldo" kind="relationship" relationship="viewControllers" id="MrW-oU-LuU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zcc-Nv-g1L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1008" y="141"/>
         </scene>
     </scenes>
 </document>
