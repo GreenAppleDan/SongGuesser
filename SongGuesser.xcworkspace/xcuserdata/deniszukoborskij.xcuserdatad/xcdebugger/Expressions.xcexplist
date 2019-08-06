@@ -3,6 +3,36 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "SongInfoCell.updateViews():SongInfoCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "albumImageView.image">
+            </PersistentString>
+            <PersistentString
+               value = "UIImage(named: &quot;musicIcon.png&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MainViewController.prepare(for:sender:):MainViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "arrayOfSongs">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FoundSongsViewController.tableView(_:cellForRowAt:):FoundSongsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "sections">
+            </PersistentString>
+            <PersistentString
+               value = "model.cellIdentifier">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "FoundSongsViewController.tableView(_:heightForRowAt:):FoundSongsViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -11,16 +41,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #1 in FoundSongsViewController.showLyricsView():FoundSongsViewController.swift">
+         contextName = "SongInfoViewController.tableView(_:numberOfRowsInSection:):SongInfoViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "self.view.frame.origin.y">
-            </PersistentString>
-            <PersistentString
-               value = "self.view.frame.height">
-            </PersistentString>
-            <PersistentString
-               value = "lyricsView.frame.origin.y">
+               value = "arrayOfModels?.count ?? 0">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -42,7 +66,57 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "FoundSongsViewController.prepare(for:sender:):FoundSongsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "lyricsForSongInfo">
+            </PersistentString>
+            <PersistentString
+               value = "titleForSongInfo">
+            </PersistentString>
+            <PersistentString
+               value = "modelsForSongInfo">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #2 in MainInteractor.findTheSong(keyWords:):MainInteractor.swift">
+      </ContextState>
+      <ContextState
+         contextName = "LinkCell.showLinkButtonPressed(_:):LinkCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ink">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AllUsersSongsPresenter.tableViewTapped(index:):AllUsersSongsPresenter.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in FoundSongsViewController.showLyricsView():FoundSongsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view.frame.origin.y">
+            </PersistentString>
+            <PersistentString
+               value = "self.view.frame.height">
+            </PersistentString>
+            <PersistentString
+               value = "lyricsView.frame.origin.y">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SongInfoCellModel.init(song:):SongInfoCellModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "song.fullTitle">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #2 in AllUsersSongsPresenter.configureView():AllUsersSongsPresenter.swift">
       </ContextState>
       <ContextState
          contextName = "closure #1 in closure #1 in AudDService.getArrayOfSongsFromRequest(keyWords:):AudDService.swift">
@@ -59,31 +133,26 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "FoundSongsViewController.tableView(_:cellForRowAt:):FoundSongsViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "sections">
-            </PersistentString>
-            <PersistentString
-               value = "model.cellIdentifier">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "SongInfoCellModel.init(song:):SongInfoCellModel.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "song.fullTitle">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "SongSectionModel.init(_:):SongSectionModel.swift">
          <PersistentStrings>
             <PersistentString
                value = "rows">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SongInfoViewController.tableView(_:cellForRowAt:):SongInfoViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "arrayOfModels!">
+            </PersistentString>
+            <PersistentString
+               value = "arrayOfModels![indexPath.row]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #1 in CloudFirestoreService.getArrayOfSongsForAllUsers():CloudFirestoreService.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

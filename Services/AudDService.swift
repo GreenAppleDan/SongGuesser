@@ -31,7 +31,7 @@ class AudDService {
                 let json = JSON(value)
                 if json["status"] == "success"{
                     print(json["result"].arrayValue)
-                    
+                    var currentIndex = 0
                     for songJson in json["result"].arrayValue {
                         
                         var name: String
@@ -49,8 +49,8 @@ class AudDService {
                         
                         var songToAddToArray = Song(name: name, author: author, fullTitle: fullTitle, lyrics: lyrics)
                         // getting URLs
-                        var jsonString = json["result"][0]["media"].stringValue
-                        
+                        var jsonString = json["result"][currentIndex]["media"].stringValue
+                        currentIndex += 1
                         print(jsonString)
                         if jsonString != "[]" {
                         let data = jsonString.data(using: .utf8)!

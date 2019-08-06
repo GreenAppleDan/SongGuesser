@@ -22,5 +22,9 @@ class FoundSongsRouter: FoundSongsRouterProtocol {
     func moveToSongFinder() {
         viewController.performSegue(withIdentifier: "fromFoundSongsToSongSearch", sender: nil)
     }
+    
+    func moveToSongInfo() {
+        viewController.performSegue(withIdentifier: "fromFoundSongsToSongInfo", sender: nil)
+    }
 }
 

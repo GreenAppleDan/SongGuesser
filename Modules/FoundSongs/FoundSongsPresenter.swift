@@ -9,10 +9,9 @@
 
 import Foundation
 
-class FoundSongsPresenter: FoundSongsPresenterProtocol , SongSectionModelDelegate , LyricsViewDelegate {
-
+class FoundSongsPresenter: FoundSongsPresenterProtocol , SongSectionModelDelegate , LyricsViewDelegate  {
     
-
+    
     var sections = [SongSectionModel]()
     
     weak var view: FoundSongsViewProtocol!
@@ -42,6 +41,7 @@ class FoundSongsPresenter: FoundSongsPresenterProtocol , SongSectionModelDelegat
         view.showLyricsView()
     }
     
+    
     func backButtonClicked() {
         router.moveToSongFinder()
     }
@@ -49,7 +49,34 @@ class FoundSongsPresenter: FoundSongsPresenterProtocol , SongSectionModelDelegat
     func closeButtonClickedLyricsSubView() {
         view.hideLyricsView()
     }
+    
+    func tableViewTapped(index: Int){
+        let songToProcess = view.arrayOfSongs![index]
+        view.lyricsForSongInfo = songToProcess.lyrics
+        view.titleForSongInfo = songToProcess.fullTitle
+        
+        view.modelsForSongInfo = GetCellModelsFromSong.shared.getCellModelsFromSong(song: songToProcess)
+        router.moveToSongInfo()
+    }
 }
+//    func setupSongInfoViewAndShow(index: Int){
+//        var songToProcess = view.arrayOfSongs![index]
+//        view.songInfoView.lyrics = songToProcess.lyrics
+//        view.songInfoView.title = songToProcess.fullTitle
+//        var arrayOfModels = [LinkInfoCellModel]()
+//        if let youtubeUrl = songToProcess.utubeLink{
+//        arrayOfModels.append(LinkInfoCellModel(url: youtubeUrl, urlType: .youTube))
+//        }
+//        if let spotifyUrl = songToProcess.spotifyLink{
+//            arrayOfModels.append(LinkInfoCellModel(url: spotifyUrl, urlType: .spotify))
+//        }
+//        if let appleMusicUrl = songToProcess.appleMusicLink{
+//            arrayOfModels.append(LinkInfoCellModel(url: appleMusicUrl, urlType: .appleMusic))
+//        }
+//        view.songInfoView.reloadTableView()
+//        view.showSongInfoView()
+//    }
+
 
 //func employeesDidReceive(_ employees: [Employee]) {
 //    var sections = [EmployeeSectionModel]()

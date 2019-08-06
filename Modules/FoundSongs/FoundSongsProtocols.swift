@@ -16,6 +16,9 @@ protocol FoundSongsViewProtocol: class {
     var lyricsView: LyricsView! {get set}
     func showLyricsView()
     func hideLyricsView()
+    var lyricsForSongInfo: String? {get set}
+    var titleForSongInfo: String? {get set}
+    var modelsForSongInfo: [LinkInfoCellModel]? {get set}
     
 }
 
@@ -23,6 +26,7 @@ protocol FoundSongsPresenterProtocol: class {
     var router: FoundSongsRouterProtocol! { set get }
     func configureView()
     func backButtonClicked()
+    func tableViewTapped(index: Int)
 }
 
 protocol FoundSongsInteractorProtocol: class {
@@ -30,6 +34,7 @@ protocol FoundSongsInteractorProtocol: class {
 
 protocol FoundSongsRouterProtocol: class {
     func moveToSongFinder()
+    func moveToSongInfo()
 }
 
 protocol FoundSongsConfiguratorProtocol: class {

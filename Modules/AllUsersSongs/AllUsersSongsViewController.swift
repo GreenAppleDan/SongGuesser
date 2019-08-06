@@ -1,8 +1,8 @@
 //
-//  FoundSongsFoundSongsViewController.swift
+//  AllUsersSongsAllUsersSongsViewController.swift
 //  SongGuesser
 //
-//  Created by Denis Zhukoborsky on 01/08/2019.
+//  Created by Denis Zhukoborsky on 06/08/2019.
 //  Copyright © 2019 denis.zhukoborsky. All rights reserved.
 //
 
@@ -10,9 +10,9 @@
 
 import UIKit
 
-class FoundSongsViewController: UIViewController, FoundSongsViewProtocol  {
+class AllUsersSongsViewController: UIViewController, AllUsersSongsViewProtocol {
     
-    var arrayOfSongs: [Song]?
+    var arrayOfSongs : [Song]?
     var sections = [SongSectionModel]()
     
     
@@ -20,17 +20,15 @@ class FoundSongsViewController: UIViewController, FoundSongsViewProtocol  {
     var titleForSongInfo: String?
     var modelsForSongInfo: [LinkInfoCellModel]?
     
+    
     @IBOutlet weak var lyricsView: LyricsView!
     
     @IBOutlet weak var tableView: UITableView!
     
-    var presenter: FoundSongsPresenterProtocol!
-    let configurator: FoundSongsConfiguratorProtocol = FoundSongsConfigurator()
     
-    
-//    @IBAction func backButtonClicked(_ sender: UIBarButtonItem) {
-//        presenter.backButtonClicked()
-//    }
+    var presenter: AllUsersSongsPresenterProtocol!
+    let configurator: AllUsersSongsConfiguratorProtocol = AllUsersSongsConfigurator()
+
     // MARK: - Lifecycle methods
     
     override func viewDidLoad() {
@@ -39,7 +37,16 @@ class FoundSongsViewController: UIViewController, FoundSongsViewProtocol  {
         presenter.configureView()
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        self.viewDidAppear(animated)
+//        presenter.configureView()
+//    }
+    
     func showLyricsView() {
+        self.tabBarController?.tabBar.isHidden = true
         self.view.bringSubviewToFront(lyricsView)
         let xPosition = lyricsView.frame.origin.x
         let yPosition = CGFloat(0)
@@ -51,6 +58,7 @@ class FoundSongsViewController: UIViewController, FoundSongsViewProtocol  {
     }
     
     func hideLyricsView() {
+        self.tabBarController?.tabBar.isHidden = false
         let xPosition = lyricsView.frame.origin.x
         let yPosition = lyricsView.frame.origin.y + self.view.frame.height
         let width = lyricsView.frame.size.width
@@ -63,33 +71,20 @@ class FoundSongsViewController: UIViewController, FoundSongsViewProtocol  {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.destination is SongInfoViewController {
             let viewController = segue.destination as? SongInfoViewController
-            viewController?.lyrics = lyricsForSongInfo! + "\n"
+            viewController?.lyrics = lyricsForSongInfo
             viewController?.songTitle = titleForSongInfo
             viewController?.arrayOfModels = modelsForSongInfo
-//            viewController?.arrayOfSongsForFoundSongs = arrayOfSongs
-//            viewController?.sectionsForFoundSongs = sections
+            //            viewController?.arrayOfSongsForFoundSongs = arrayOfSongs
+            //            viewController?.sectionsForFoundSongs = sections
         }
     }
     
-//    if segue.destination is FoundSongsViewController {
-//    let viewController = segue.destination as? FoundSongsViewController
-//    viewController?.arrayOfSongs = arrayOfSongs
-//    }
-//    let xPosition = DynView.frame.origin.x
-//    let yPosition = DynView.frame.origin.y - 20 // Slide Up - 20px
-//
-//    let width = DynView.frame.size.width
-//    let height = DynView.frame.size.height
-//
-//    UIView.animateWithDuration(1.0, animations: {
-//    dynView.frame = CGRect(x: xPosition, y: yPosition, width: width, height: height)
-//    })
+    
 }
 
-extension FoundSongsViewController: UITableViewDelegate , UITableViewDataSource {
 
-    
-    
+
+extension AllUsersSongsViewController: UITableViewDelegate , UITableViewDataSource {
     func updateForSections(_ sections: [SongSectionModel]) {
         self.sections = sections
         
@@ -117,28 +112,7 @@ extension FoundSongsViewController: UITableViewDelegate , UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        CloudFirestoreService.shared.addSongToDBCurrentUser(song : arrayOfSongs![indexPath.section])
+        //        CloudFirestoreService.shared.addSongToDBCurrentUser(song : arrayOfSongs![indexPath.section])
         presenter.tableViewTapped(index: indexPath.section)
     }
 }
-//extension EmployeeListViewController {
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        return sections.count
-//    }
-//
-//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return sections[section].rows.count
-//    }
-//
-//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let model = sections[indexPath.section].rows[indexPath.row]
-//        let cell = tableView.dequeueReusableCell(withIdentifier: model.cellIdentifier, for: indexPath) as! EmployeeBaseCell
-//        cell.model = model
-//
-//        return cell
-//    }
-//
-//    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return CGFloat(sections[indexPath.section].rows[indexPath.row].cellHeight)
-//    }
-//}

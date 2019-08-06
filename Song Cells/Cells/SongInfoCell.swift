@@ -19,7 +19,12 @@ class SongInfoCell: SongBaseCell {
             return
         }
         songNameLabel.text = model.title
-        albumImageView.image = model.image ?? nil
+        if let image = model.image {
+        albumImageView.image = image
+        }
+//        } else {
+//            albumImageView.image = UIImage(named:"musicIcon.png")
+//        }
     }
 }
 //class EmployeeWorkplaceCell: EmployeeBaseCell {

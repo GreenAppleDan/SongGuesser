@@ -10,6 +10,8 @@ target 'SongGuesser' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
   pod "PromiseKit", "~> 6.8"
   pod "Alamofire"
   pod 'SwiftyJSON', '~> 4.0'
