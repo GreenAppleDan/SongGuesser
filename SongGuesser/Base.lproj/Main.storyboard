@@ -21,13 +21,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Guesser" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QjY-uG-FSc">
                                 <rect key="frame" x="128" y="58" width="158" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33Q-hh-cWW">
                                 <rect key="frame" x="142" y="111" width="130" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g3C-HZ-c4U">
@@ -44,8 +44,11 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Xs-I6-JA0">
                                 <rect key="frame" x="150" y="302" width="116" height="35"/>
+                                <color key="backgroundColor" red="0.50315845012664795" green="0.50322169065475464" blue="0.50313699245452881" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Register User"/>
+                                <state key="normal" title="Register User">
+                                    <color key="titleColor" red="0.13662037253379822" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="registerUserButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u1n-GP-aNE"/>
                                 </connections>
@@ -53,13 +56,16 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iB8-6A-5aa">
                                 <rect key="frame" x="20" y="356" width="224" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8W-Jj-EBx">
                                 <rect key="frame" x="273" y="351" width="78" height="34"/>
+                                <color key="backgroundColor" red="0.50315845012664795" green="0.50322169065475464" blue="0.50313699245452881" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Log In"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="0.13662037253379822" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="logInButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l79-hQ-cQ6"/>
                                 </connections>
@@ -72,7 +78,8 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u8W-Jj-EBx" secondAttribute="trailing" constant="63" id="0ME-ho-bKU"/>
                             <constraint firstItem="QjY-uG-FSc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="71T-Sw-mZ5"/>
@@ -120,19 +127,18 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lmf-yW-BOy">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
                                 <items>
-                                    <navigationItem title="My Found Songs" id="NIr-dP-HN2">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="PAj-gU-0PU">
-                                            <connections>
-                                                <action selector="backButtonPressed:" destination="qpd-4O-YLh" id="yg0-ng-7WZ"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
+                                    <navigationItem title="My Found Songs" id="NIr-dP-HN2"/>
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Veq-Mf-cmz">
                                 <rect key="frame" x="0.0" y="44" width="414" height="643"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SongInfoCell" id="IW1-by-4vH" customClass="SongInfoCell" customModule="SongGuesser" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
@@ -150,10 +156,11 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agm-C5-99Y">
                                                     <rect key="frame" x="78.333333333333343" y="17" width="315.66666666666663" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="agm-C5-99Y" firstAttribute="leading" secondItem="q1l-iW-rAo" secondAttribute="trailing" constant="8" id="6VF-bW-Iu7"/>
                                                 <constraint firstItem="agm-C5-99Y" firstAttribute="top" secondItem="GIR-Mw-YYe" secondAttribute="topMargin" constant="6" id="CBn-o4-DR6"/>
@@ -178,7 +185,10 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chH-cu-Vm3">
                                                     <rect key="frame" x="166" y="6" width="82" height="30"/>
-                                                    <state key="normal" title="Show Lyrics"/>
+                                                    <color key="backgroundColor" red="0.50315845012664795" green="0.50322169065475464" blue="0.50313699245452881" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" title="Show Lyrics">
+                                                        <color key="titleColor" red="0.13662037253379822" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
                                                     <connections>
                                                         <action selector="showLyricsButtonPressed:" destination="ZtK-0K-kbE" eventType="touchUpInside" id="yf5-Ra-rJH"/>
                                                     </connections>
@@ -190,6 +200,7 @@
                                                 <constraint firstItem="chH-cu-Vm3" firstAttribute="leading" secondItem="qFE-w8-i3y" secondAttribute="leading" constant="166" id="iyQ-gS-XUK"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -206,7 +217,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Veq-Mf-cmz" firstAttribute="leading" secondItem="3J0-DW-W6V" secondAttribute="leading" id="7H7-Wr-vCy"/>
                             <constraint firstItem="lmf-yW-BOy" firstAttribute="trailing" secondItem="3J0-DW-W6V" secondAttribute="trailing" id="IcN-ku-GDK"/>
@@ -220,7 +231,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3J0-DW-W6V"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My Songs" id="H1y-HN-di2"/>
+                    <tabBarItem key="tabBarItem" title="My Songs" image="icons8-user-menu-male-30.png" selectedImage="icons8-user-menu-male-30.png" id="H1y-HN-di2"/>
                     <size key="freeformSize" width="414" height="736"/>
                     <connections>
                         <outlet property="lyricsView" destination="RCr-KV-t3D" id="F69-qi-eej"/>
@@ -250,13 +261,17 @@
                             </view>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6h6-nL-kh1">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Recently Found Songs" id="h7l-EG-K5a"/>
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZfJ-PN-1tR">
                                 <rect key="frame" x="0.0" y="44" width="414" height="643"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SongInfoCell" id="KRu-EZ-XgA" customClass="SongInfoCell" customModule="SongGuesser" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
@@ -274,7 +289,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvO-Jb-bf7">
                                                     <rect key="frame" x="78.333333333333343" y="17" width="315.66666666666663" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -288,6 +303,7 @@
                                                 <constraint firstItem="HvO-Jb-bf7" firstAttribute="top" secondItem="Avs-78-aE5" secondAttribute="topMargin" constant="6" id="xjm-NK-Wym"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="albumImageView" destination="7zD-E1-Ntq" id="fGv-BN-6aF"/>
                                             <outlet property="songNameLabel" destination="HvO-Jb-bf7" id="EUp-3s-IsC"/>
@@ -302,7 +318,10 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUZ-r1-Alt">
                                                     <rect key="frame" x="166" y="6" width="82" height="30"/>
-                                                    <state key="normal" title="Show Lyrics"/>
+                                                    <color key="backgroundColor" red="0.50315845012664795" green="0.50322169065475464" blue="0.50313699245452881" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" title="Show Lyrics">
+                                                        <color key="titleColor" red="0.13662037253379822" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
                                                     <connections>
                                                         <action selector="showLyricsButtonPressed:" destination="YM8-3l-2Jm" eventType="touchUpInside" id="kmh-nO-0IU"/>
                                                     </connections>
@@ -314,6 +333,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="IUZ-r1-Alt" secondAttribute="trailing" constant="166" id="Xh6-qq-pub"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -322,7 +342,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstItem="ZfJ-PN-1tR" firstAttribute="bottom" secondItem="Ol8-KZ-hG2" secondAttribute="bottom" id="3KA-BD-67O"/>
                             <constraint firstItem="Ccq-lJ-1H6" firstAttribute="bottom" secondItem="Ol8-KZ-hG2" secondAttribute="bottom" constant="785" id="CJP-9b-cHf"/>
@@ -339,7 +359,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ol8-KZ-hG2"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Recently Found Songs" id="JQ8-zI-acL"/>
+                    <tabBarItem key="tabBarItem" title="Recently Found Songs" image="icons8-rating-30.png" selectedImage="icons8-rating-30.png" id="JQ8-zI-acL"/>
                     <size key="freeformSize" width="414" height="736"/>
                     <connections>
                         <outlet property="lyricsView" destination="Ccq-lJ-1H6" id="DQj-c8-90o"/>
@@ -368,28 +388,28 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search For Songs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ob-NC-ZIx">
                                 <rect key="frame" x="98" y="92" width="218" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note: wirte words in lyrics separated by space in order to find the song" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9A-0T-QTd">
                                 <rect key="frame" x="51" y="307" width="313" height="40.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPg-IQ-6fG">
                                 <rect key="frame" x="158" y="246" width="99" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.50315845012664795" green="0.50322169065475464" blue="0.50313699245452881" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="Find The Song">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.13662037253379822" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="findTheSongButtonClicked:" destination="s99-EJ-aZx" eventType="touchUpInside" id="oI1-6O-FAP"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstItem="3OL-k4-mt0" firstAttribute="trailing" secondItem="7ob-NC-ZIx" secondAttribute="trailing" constant="98" id="1DQ-my-g5k"/>
                             <constraint firstItem="yPg-IQ-6fG" firstAttribute="top" secondItem="gsk-kr-cqY" secondAttribute="bottom" constant="36" id="70F-9N-1jz"/>
@@ -432,14 +452,19 @@
                                 </constraints>
                             </view>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fz9-V0-o8p">
-                                <rect key="frame" x="0.0" y="64" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Found Songs" id="FPu-Zg-scH"/>
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rpm-sd-0hO">
                                 <rect key="frame" x="0.0" y="94" width="414" height="672"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SongInfoCell" id="kb7-32-3ji" customClass="SongInfoCell" customModule="SongGuesser" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
@@ -457,7 +482,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKm-sC-OhU">
                                                     <rect key="frame" x="78.333333333333343" y="17" width="315.66666666666663" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -471,6 +496,7 @@
                                                 <constraint firstItem="dt9-MZ-KlI" firstAttribute="leading" secondItem="enD-AJ-rTU" secondAttribute="leading" constant="20" id="zGe-Z1-bjb"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="albumImageView" destination="dt9-MZ-KlI" id="gwd-UJ-lqR"/>
                                             <outlet property="songNameLabel" destination="BKm-sC-OhU" id="FQw-Xu-0ul"/>
@@ -485,6 +511,7 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZS-ap-64l">
                                                     <rect key="frame" x="166" y="6" width="82" height="30"/>
+                                                    <color key="backgroundColor" red="0.50315845012664795" green="0.50322169065475464" blue="0.50313699245452881" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" title="Show Lyrics"/>
                                                     <connections>
                                                         <action selector="showLyricsButtonPressed:" destination="Jv8-lm-ona" eventType="touchUpInside" id="GjV-9g-OpV"/>
@@ -497,6 +524,7 @@
                                                 <constraint firstItem="rZS-ap-64l" firstAttribute="top" secondItem="3MC-Am-5eS" secondAttribute="top" constant="6" id="up8-sa-Q1I"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -548,7 +576,7 @@
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ryk-m5-bac">
                                 <rect key="frame" x="69" y="413" width="278" height="132"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="132" id="PgJ-Ha-u5k"/>
                                 </constraints>
@@ -568,7 +596,10 @@
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yb1-9c-eMF">
                                                     <rect key="frame" x="76" y="6" width="202" height="30"/>
-                                                    <state key="normal" title="Button"/>
+                                                    <color key="backgroundColor" red="0.50315845012664795" green="0.50322169065475464" blue="0.50313699245452881" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleColor" red="0.13662037253379822" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
                                                     <connections>
                                                         <action selector="showLinkButtonPressed:" destination="k2M-kd-I8Z" eventType="touchUpInside" id="g9c-ZC-KXj"/>
                                                     </connections>
@@ -584,6 +615,7 @@
                                                 <constraint firstItem="3GW-x9-h3g" firstAttribute="top" secondItem="n4r-7c-aBN" secondAttribute="top" constant="5" id="adc-Rr-uGc"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="linkImageView" destination="3GW-x9-h3g" id="EE3-zK-taD"/>
                                             <outlet property="openLinkButtonOutlet" destination="yb1-9c-eMF" id="beo-Xg-1hO"/>
@@ -609,11 +641,14 @@
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pjf-CV-cYh">
                                 <rect key="frame" x="119" y="264" width="179" height="52"/>
+                                <color key="backgroundColor" red="0.50315845012664795" green="0.50322169065475464" blue="0.50313699245452881" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="V7D-Nk-Atj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <state key="normal" title="Show Lyrics"/>
+                                <state key="normal" title="Show Lyrics">
+                                    <color key="titleColor" red="0.13662037253379822" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="showLyricsSongInfo:" destination="AQ9-P5-Tjf" eventType="touchUpInside" id="rZL-L4-Qbo"/>
                                 </connections>
@@ -629,11 +664,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMK-Ex-oAV">
                                 <rect key="frame" x="20" y="44" width="374" height="79"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cMK-Ex-oAV" firstAttribute="leading" secondItem="SCZ-8w-KSV" secondAttribute="leading" constant="20" id="CYE-de-nhr"/>
                             <constraint firstItem="Ryk-m5-bac" firstAttribute="top" secondItem="Pjf-CV-cYh" secondAttribute="bottom" constant="97" id="Fmp-FZ-4Qa"/>
@@ -677,6 +712,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="hli-cG-tNH" kind="relationship" relationship="viewControllers" id="9lH-Dc-z7Q"/>
@@ -692,11 +728,12 @@
         <scene sceneID="NZ0-Ce-FsD">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hli-cG-tNH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Find Song" id="UlN-Nm-Yfe"/>
+                    <tabBarItem key="tabBarItem" title="Find Song" image="icons8-search-30.png" selectedImage="icons8-search-30.png" id="UlN-Nm-Yfe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Nme-W5-7jR">
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -710,6 +747,9 @@
     </scenes>
     <resources>
         <image name="appleMusic.png" width="626.08697509765625" height="469.56521606445312"/>
+        <image name="icons8-rating-30.png" width="30" height="30"/>
+        <image name="icons8-search-30.png" width="30" height="30"/>
+        <image name="icons8-user-menu-male-30.png" width="30" height="30"/>
         <image name="itunes.jpg" width="900" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>

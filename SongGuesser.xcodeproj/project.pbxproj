@@ -48,6 +48,9 @@
 		1462AB7022EE090200335E79 /* AlertPresenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1462AB6F22EE090200335E79 /* AlertPresenterService.swift */; };
 		1462AB7222EE0EAE00335E79 /* EmailValidatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1462AB7122EE0EAE00335E79 /* EmailValidatorService.swift */; };
 		1462AB7422EE3FC800335E79 /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1462AB7322EE3FC800335E79 /* FirebaseAuthService.swift */; };
+		14A4D7C122F9F961007722D8 /* icons8-user-menu-male-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 14A4D7C022F9F961007722D8 /* icons8-user-menu-male-30.png */; };
+		14A4D7C322F9F9D2007722D8 /* icons8-search-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 14A4D7C222F9F9D2007722D8 /* icons8-search-30.png */; };
+		14A4D7C522F9FA20007722D8 /* icons8-rating-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 14A4D7C422F9FA20007722D8 /* icons8-rating-30.png */; };
 		14B33BD622F9F41F0021C61A /* itunes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14B33BD522F9F41E0021C61A /* itunes.jpg */; };
 		18A36237AA686E9424B33B26 /* MyFoundSongsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8104CE627004EDD5A108DA68 /* MyFoundSongsConfigurator.swift */; };
 		18E26275EA136838FA344B49 /* FoundSongsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C96B0A2AD166AC42889CE37 /* FoundSongsRouter.swift */; };
@@ -146,6 +149,9 @@
 		1462AB6F22EE090200335E79 /* AlertPresenterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenterService.swift; sourceTree = "<group>"; };
 		1462AB7122EE0EAE00335E79 /* EmailValidatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidatorService.swift; sourceTree = "<group>"; };
 		1462AB7322EE3FC800335E79 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
+		14A4D7C022F9F961007722D8 /* icons8-user-menu-male-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-user-menu-male-30.png"; sourceTree = "<group>"; };
+		14A4D7C222F9F9D2007722D8 /* icons8-search-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-search-30.png"; sourceTree = "<group>"; };
+		14A4D7C422F9FA20007722D8 /* icons8-rating-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-rating-30.png"; sourceTree = "<group>"; };
 		14B33BD522F9F41E0021C61A /* itunes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = itunes.jpg; sourceTree = "<group>"; };
 		1B4D4766630C9C18A4E5B9C5 /* AllUsersSongsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AllUsersSongsPresenter.swift; sourceTree = "<group>"; };
 		1C96B0A2AD166AC42889CE37 /* FoundSongsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FoundSongsRouter.swift; sourceTree = "<group>"; };
@@ -303,6 +309,9 @@
 				1414C5D922F48D3B00DF342C /* spotify.jpg */,
 				1414C5D722F48CFB00DF342C /* utube.jpg */,
 				14B33BD522F9F41E0021C61A /* itunes.jpg */,
+				14A4D7C422F9FA20007722D8 /* icons8-rating-30.png */,
+				14A4D7C222F9F9D2007722D8 /* icons8-search-30.png */,
+				14A4D7C022F9F961007722D8 /* icons8-user-menu-male-30.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -619,12 +628,15 @@
 				142FB6F322EDE9850017693B /* LaunchScreen.storyboard in Resources */,
 				14B33BD622F9F41F0021C61A /* itunes.jpg in Resources */,
 				142FB71722EDFC820017693B /* GoogleService-Info.plist in Resources */,
+				14A4D7C522F9FA20007722D8 /* icons8-rating-30.png in Resources */,
 				14044C8B22F38A2F0078283B /* LyricsView.xib in Resources */,
 				1414C5DA22F48D3B00DF342C /* spotify.jpg in Resources */,
 				1414C5DC22F48D6700DF342C /* appleMusic.png in Resources */,
 				142FB6F022EDE9850017693B /* Assets.xcassets in Resources */,
 				1414C5D822F48CFB00DF342C /* utube.jpg in Resources */,
 				142FB6EE22EDE9840017693B /* Main.storyboard in Resources */,
+				14A4D7C122F9F961007722D8 /* icons8-user-menu-male-30.png in Resources */,
+				14A4D7C322F9F9D2007722D8 /* icons8-search-30.png in Resources */,
 				1462AB6D22EE077400335E79 /* LogInView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

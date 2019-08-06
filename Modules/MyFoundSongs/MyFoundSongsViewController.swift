@@ -23,9 +23,6 @@ class MyFoundSongsViewController: UIViewController, MyFoundSongsViewProtocol {
     
     @IBOutlet weak var lyricsView: LyricsView!
     
-    @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
-    }
-    
     var presenter: MyFoundSongsPresenterProtocol!
     let configurator: MyFoundSongsConfiguratorProtocol = MyFoundSongsConfigurator()
 
@@ -47,7 +44,7 @@ class MyFoundSongsViewController: UIViewController, MyFoundSongsViewProtocol {
     
     func showLyricsView() {
         self.tabBarController?.tabBar.isHidden = true
-        self.tabBarController?.tabBar.layer.zPosition = -1
+//        self.tabBarController?.tabBar.layer.zPosition = -1
         self.view.bringSubviewToFront(lyricsView)
         let xPosition = lyricsView.frame.origin.x
         let yPosition = CGFloat(0)
@@ -60,7 +57,7 @@ class MyFoundSongsViewController: UIViewController, MyFoundSongsViewProtocol {
     
     func hideLyricsView() {
         self.tabBarController?.tabBar.isHidden = false
-        self.tabBarController?.tabBar.layer.zPosition = 0
+//        self.tabBarController?.tabBar.layer.zPosition = 0
         let xPosition = lyricsView.frame.origin.x
         let yPosition = lyricsView.frame.origin.y + self.view.frame.height
         let width = lyricsView.frame.size.width

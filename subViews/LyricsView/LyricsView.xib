@@ -25,6 +25,11 @@
             <subviews>
                 <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sab-Zt-azz">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </textAttributes>
                     <items>
                         <navigationItem title="Lyrics" id="QIX-AF-yfG">
                             <barButtonItem key="leftBarButtonItem" title="Close" id="0xP-hv-8AM">
@@ -45,16 +50,17 @@
                                 <constraint firstAttribute="width" constant="414" id="c7H-H1-2EO"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84C-22-uMz">
                             <rect key="frame" x="0.0" y="65" width="414" height="20.333333333333329"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="84C-22-uMz" secondAttribute="bottom" constant="650" placeholder="YES" id="9xo-Ul-KCx"/>
                         <constraint firstItem="84C-22-uMz" firstAttribute="top" secondItem="fVk-Io-E1T" secondAttribute="bottom" constant="8" id="Gan-Nx-CaW"/>
@@ -66,7 +72,7 @@
                     </constraints>
                 </scrollView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
             <constraints>
                 <constraint firstItem="fL3-mX-swh" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="DMo-et-57U"/>
                 <constraint firstItem="fL3-mX-swh" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="DT7-Kd-4W1"/>

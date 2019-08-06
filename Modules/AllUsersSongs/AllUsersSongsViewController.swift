@@ -112,7 +112,7 @@ extension AllUsersSongsViewController: UITableViewDelegate , UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //        CloudFirestoreService.shared.addSongToDBCurrentUser(song : arrayOfSongs![indexPath.section])
+        CloudFirestoreService.shared.addSongToDBCurrentUser(song : arrayOfSongs![indexPath.section])
         presenter.tableViewTapped(index: indexPath.section)
     }
 }
